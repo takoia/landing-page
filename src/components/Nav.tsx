@@ -30,6 +30,9 @@ export function Nav() {
           <a className="btn btn-secondary nav__cta" href={content.nav.cta.href} target="_blank" rel="noreferrer">
             {content.nav.cta.label}
           </a>
+          <a className="btn btn-primary nav__cta nav__demo" href={content.nav.demo.href} target="_blank" rel="noreferrer">
+            {content.nav.demo.label}
+          </a>
         </div>
       </div>
     </header>

@@ -34,6 +34,7 @@ export const es: SiteContent = {
       { label: "Precios", href: "#pricing" },
     ],
     cta: { label: "Ver en GitHub", href: "https://github.com/takoia", variant: "secondary" },
+    demo: { label: "Demo en vivo", href: "https://takoia.szymkowiak.fr/", variant: "primary" },
   },
 
   hero: {
@@ -45,7 +46,8 @@ export const es: SiteContent = {
     pitch:
       "Otros te alquilan agentes que viven en su nube. Takoia se ejecuta en hardware que posees, recuerda lo que aprende y te permite vender acceso a ello.",
     ctas: [
-      { label: "Ver en GitHub", href: "https://github.com/takoia", variant: "primary" },    ],
+      { label: "Ver en GitHub", href: "https://github.com/takoia", variant: "secondary" },
+      { label: "Demo en vivo", href: "https://takoia.szymkowiak.fr/", variant: "primary" },    ],
   },
 
   problem: {
@@ -220,7 +222,8 @@ export const es: SiteContent = {
     title: "Ejecútalo. Poséelo. Revéndelo.",
     body: "Otros te alquilan agentes que viven en su nube. Takoia se ejecuta en hardware que posees, recuerda lo que aprende y te permite vender acceso a ello.",
     ctas: [
-      { label: "Ver en GitHub", href: "https://github.com/takoia", variant: "primary" },    ],
+      { label: "Ver en GitHub", href: "https://github.com/takoia", variant: "secondary" },
+      { label: "Demo en vivo", href: "https://takoia.szymkowiak.fr/", variant: "primary" },    ],
   },
 
   footer: {

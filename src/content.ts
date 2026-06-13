@@ -102,6 +102,7 @@ export const en = {
       { label: "Pricing", href: "#pricing" },
     ],
     cta: { label: "View on GitHub", href: "https://github.com/takoia", variant: "secondary" } as Cta,
+    demo: { label: "Live demo", href: "https://takoia.szymkowiak.fr/", variant: "primary" } as Cta,
   },
 
   // 1) HERO
@@ -115,7 +116,8 @@ export const en = {
     pitch:
       "Others rent you agents that live in their cloud. Takoia runs on hardware you own, remembers what it learns, and lets you sell access to it.",
     ctas: [
-      { label: "View on GitHub", href: "https://github.com/takoia", variant: "primary" },    ] as Cta[],
+      { label: "View on GitHub", href: "https://github.com/takoia", variant: "secondary" },
+      { label: "Live demo", href: "https://takoia.szymkowiak.fr/", variant: "primary" },    ] as Cta[],
   },
 
   // 2) THE PROBLEM
@@ -356,7 +358,8 @@ export const en = {
     title: "Run it. Own it. Resell it.",
     body: "Others rent you agents that live in their cloud. Takoia runs on hardware you own, remembers what it learns, and lets you sell access to it.",
     ctas: [
-      { label: "View on GitHub", href: "https://github.com/takoia", variant: "primary" },    ] as Cta[],
+      { label: "View on GitHub", href: "https://github.com/takoia", variant: "secondary" },
+      { label: "Live demo", href: "https://takoia.szymkowiak.fr/", variant: "primary" },    ] as Cta[],
   },
 
   footer: {

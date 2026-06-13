@@ -59,7 +59,8 @@
   .nav__links { display: none; }
 }
 @media (max-width: 520px) {
-  .nav__cta { display: none; }
+  /* Keep the demo button; drop the GitHub one to save space. */
+  .nav__cta:not(.nav__demo) { display: none; }
 }
 
 /* ---------- Language switcher ---------- */
