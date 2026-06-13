@@ -36,9 +36,7 @@ export const fr: SiteContent = {
     pitch:
       "Les autres vous louent des agents qui vivent dans leur cloud. Takoia tourne sur du matériel que vous possédez, retient ce qu'il apprend et vous laisse en vendre l'accès.",
     ctas: [
-      { label: "Voir sur GitHub", href: "https://github.com/takoia", variant: "primary" },
-      { label: "Demander l'accès", href: "mailto:contact@rtk-ai.app?subject=Takoia%20access", variant: "secondary" },
-    ],
+      { label: "Voir sur GitHub", href: "https://github.com/takoia", variant: "primary" },    ],
   },
 
   problem: {
@@ -211,9 +209,7 @@ export const fr: SiteContent = {
     title: "Exécutez-le. Possédez-le. Revendez-le.",
     body: "Les autres vous louent des agents qui vivent dans leur cloud. Takoia tourne sur du matériel que vous possédez, retient ce qu'il apprend et vous laisse en vendre l'accès.",
     ctas: [
-      { label: "Voir sur GitHub", href: "https://github.com/takoia", variant: "primary" },
-      { label: "Demander l'accès", href: "mailto:contact@rtk-ai.app?subject=Takoia%20access", variant: "secondary" },
-    ],
+      { label: "Voir sur GitHub", href: "https://github.com/takoia", variant: "primary" },    ],
   },
 
   footer: {

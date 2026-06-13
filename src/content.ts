@@ -104,9 +104,7 @@ export const en = {
     pitch:
       "Others rent you agents that live in their cloud. Takoia runs on hardware you own, remembers what it learns, and lets you sell access to it.",
     ctas: [
-      { label: "View on GitHub", href: "https://github.com/takoia", variant: "primary" },
-      { label: "Request access", href: "mailto:contact@rtk-ai.app?subject=Takoia%20access", variant: "secondary" },
-    ] as Cta[],
+      { label: "View on GitHub", href: "https://github.com/takoia", variant: "primary" },    ] as Cta[],
   },
 
   // 2) THE PROBLEM
@@ -345,9 +343,7 @@ export const en = {
     title: "Run it. Own it. Resell it.",
     body: "Others rent you agents that live in their cloud. Takoia runs on hardware you own, remembers what it learns, and lets you sell access to it.",
     ctas: [
-      { label: "View on GitHub", href: "https://github.com/takoia", variant: "primary" },
-      { label: "Request access", href: "mailto:contact@rtk-ai.app?subject=Takoia%20access", variant: "secondary" },
-    ] as Cta[],
+      { label: "View on GitHub", href: "https://github.com/takoia", variant: "primary" },    ] as Cta[],
   },
 
   footer: {
