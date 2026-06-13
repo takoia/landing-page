@@ -86,7 +86,7 @@ export const en = {
 
   // Accessibility / screen-reader labels (alt text, aria-labels).
   a11y: {
-    heroImageAlt: "Takoia — luminous octopus emblem in the brand's Japanese ink style",
+    heroImageAlt: "Takoia — screenshot of the agent builder (node-based interface)",
     primaryNav: "Primary",
     home: "Takoia — home",
     language: "Language",

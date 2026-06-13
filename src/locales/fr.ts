@@ -18,7 +18,7 @@ export const fr: SiteContent = {
   },
 
   a11y: {
-    heroImageAlt: "Takoia — emblème de poulpe lumineux dans le style encre japonaise de la marque",
+    heroImageAlt: "Takoia — capture d'écran du constructeur d'agents (interface en nœuds)",
     primaryNav: "Principale",
     home: "Takoia — accueil",
     language: "Langue",

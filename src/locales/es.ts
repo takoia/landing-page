@@ -18,7 +18,7 @@ export const es: SiteContent = {
   },
 
   a11y: {
-    heroImageAlt: "Takoia — emblema de pulpo luminoso al estilo de tinta japonesa de la marca",
+    heroImageAlt: "Takoia — captura de pantalla del constructor de agentes (interfaz de nodos)",
     primaryNav: "Principal",
     home: "Takoia — inicio",
     language: "Idioma",
