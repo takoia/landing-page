@@ -8,9 +8,8 @@ export function Footer() {
     <footer className="footer">
       <div className="container footer__inner">
         <div className="footer__brand">
-          <a href="#top" className="wordmark">
-            <Logo />
-            <span>Takoia</span>
+          <a href="#top" className="wordmark" aria-label={content.a11y.home}>
+            <Logo size={56} />
           </a>
           <p className="footer__blurb">{footer.blurb}</p>
         </div>

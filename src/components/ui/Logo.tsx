@@ -16,10 +16,10 @@ export function Logo({ size = 30 }: { size?: number }) {
 
 export function Wordmark() {
   const content = useContent();
+  // The brand name is baked into the logo image, so no separate text label.
   return (
     <a href="#top" className="wordmark" aria-label={content.a11y.home}>
-      <Logo />
-      <span>Takoia</span>
+      <Logo size={48} />
     </a>
   );
 }
