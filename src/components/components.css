@@ -231,17 +231,17 @@
 .triptych__step { position: relative; }
 .triptych__media {
   margin: -26px -26px 18px;
-  height: 168px;
+  height: 190px;
   overflow: hidden;
   border-bottom: 1px solid var(--border);
   background: var(--bg-2);
-  -webkit-mask-image: linear-gradient(180deg, #000 70%, transparent);
-  mask-image: linear-gradient(180deg, #000 70%, transparent);
 }
 .triptych__media img {
   width: 100%;
   height: 100%;
+  /* Product screenshots: show the top of the UI, scale to fill the banner. */
   object-fit: cover;
+  object-position: left top;
   display: block;
   transition: transform 0.4s ease;
 }
