@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
-import { content } from "../content";
+import { useContent } from "../i18n";
 import { Wordmark } from "./ui/Logo";
+import { LanguageSwitcher } from "./ui/LanguageSwitcher";
 
 export function Nav() {
+  const content = useContent();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -23,9 +25,12 @@ export function Nav() {
             </a>
           ))}
         </nav>
-        <a className="btn btn-secondary nav__cta" href={content.nav.cta.href} target="_blank" rel="noreferrer">
-          {content.nav.cta.label}
-        </a>
+        <div className="nav__actions">
+          <LanguageSwitcher />
+          <a className="btn btn-secondary nav__cta" href={content.nav.cta.href} target="_blank" rel="noreferrer">
+            {content.nav.cta.label}
+          </a>
+        </div>
       </div>
     </header>
   );

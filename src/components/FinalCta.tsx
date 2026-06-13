@@ -1,7 +1,8 @@
-import { content } from "../content";
+import { useContent } from "../i18n";
 import { Reveal } from "./ui/Reveal";
 
 export function FinalCta() {
+  const content = useContent();
   const { finalCta } = content;
   return (
     <section className="section final">

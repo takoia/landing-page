@@ -1,8 +1,10 @@
-import { content, type Verdict } from "../content";
+import type { Verdict } from "../content";
+import { useContent } from "../i18n";
 import { Reveal } from "./ui/Reveal";
 import { VerdictMark } from "./ui/Verdict";
 
 export function Comparison() {
+  const content = useContent();
   const { comparison } = content;
   const { competitors, legend } = comparison;
 

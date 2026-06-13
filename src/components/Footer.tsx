@@ -1,7 +1,8 @@
-import { content } from "../content";
+import { useContent } from "../i18n";
 import { Logo } from "./ui/Logo";
 
 export function Footer() {
+  const content = useContent();
   const { footer } = content;
   return (
     <footer className="footer">

@@ -1,11 +1,13 @@
 /**
- * content.ts — SINGLE SOURCE OF TRUTH
+ * content.ts — SINGLE SOURCE OF TRUTH (English / canonical shape)
  *
  * All user-facing copy AND all prices live here so they are trivial to edit and
- * localize later. Components must not hard-code copy or prices; import from here.
+ * localize. Components must not hard-code copy or prices — they read the active
+ * locale's dictionary via the `useContent()` hook (see src/i18n.tsx).
  *
- * All copy is in English by design (see brief). To localize, wrap this object in
- * a per-locale map later — the typed shape (`SiteContent`) stays the same.
+ * English (`en`) is the canonical dictionary; its structure defines `SiteContent`.
+ * Spanish (`es`) and French (`fr`) live in src/locales/ and must match this shape.
+ * The active language is auto-detected from the browser, then remembered.
  */
 
 export type Cta = {
@@ -66,9 +68,9 @@ export type TriptychStep = {
   image: string;
 };
 
-export type SiteContent = typeof content;
+export type SiteContent = typeof en;
 
-export const content = {
+export const en = {
   brand: {
     name: "Takoia",
     tagline: "Own your AI expertise. Resell it.",
@@ -366,4 +368,4 @@ export const content = {
     ],
     license: "Open source · github.com/takoia · © Takoia / RTK.",
   },
-} as const;
+};

@@ -44,14 +44,32 @@ Serves `./dist` locally. **Preview URL: http://localhost:4173**
 
 ## Editing copy & prices
 
-**All** user-facing copy **and** all prices live in a single typed file:
+**All** user-facing copy **and** all prices live in typed dictionaries:
 
 ```
-src/content.ts
+src/content.ts        # English (en) — canonical; its structure defines SiteContent
+src/locales/es.ts     # Spanish (es)
+src/locales/fr.ts     # French (fr)
 ```
 
-Change text or prices there and the dev server updates instantly. The typed shape
-(`SiteContent`) makes it straightforward to wrap in a per-locale map for translation later.
+Change text or prices there and the dev server updates instantly. Each locale is typed
+as `SiteContent`, so `tsc` fails the build if a translation is missing or the shape drifts.
+
+## Languages (i18n)
+
+Three languages: **English, Spanish, French**. The active language is **auto-detected from
+the browser** on first visit (`navigator.languages`), falling back to English. Once the
+visitor picks a language from the switcher in the nav, the choice is remembered
+(`localStorage`). The `<html lang>` attribute is kept in sync.
+
+- Engine + detection/persistence: `src/i18n.tsx` (`LanguageProvider`, `useContent()`,
+  `useLanguage()`).
+- Switcher UI: `src/components/ui/LanguageSwitcher.tsx`.
+- Add a language: create `src/locales/<code>.ts` exporting a `SiteContent`, then add it to
+  the `LOCALES` map in `src/i18n.tsx`.
+
+Only visible copy and display prices are translated; hrefs, image paths, competitor ids
+and comparison verdicts stay identical across locales.
 
 ## Project structure
 

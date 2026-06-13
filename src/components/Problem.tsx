@@ -1,7 +1,8 @@
-import { content } from "../content";
+import { useContent } from "../i18n";
 import { Reveal } from "./ui/Reveal";
 
 export function Problem() {
+  const content = useContent();
   const { problem } = content;
   return (
     <section className="section" id="problem">
