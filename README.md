@@ -1,8 +1,12 @@
 # Takoia — landing page
 
+> **Open source.** Source: **https://github.com/takoia** · this repo:
+> **https://github.com/takoia/landing-page**
+
 Static marketing landing page for **Takoia**: a customizable AI-agent platform you
 self-host locally — even on a Mac Mini at home — with permanent memory (ICM), so you
-**own your expertise and resell access to it**.
+**own your expertise and resell access to it**. The platform is open source — inspect
+it, fork it, and run it yourself.
 
 Built with **Bun + TypeScript + React**, bundled by **Vite** for instant Hot Module
 Replacement (HMR) and React Fast Refresh in local dev. No backend — it's a static site.

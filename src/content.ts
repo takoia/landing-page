@@ -90,7 +90,7 @@ export const content = {
       { label: "Compare", href: "#compare" },
       { label: "Pricing", href: "#pricing" },
     ],
-    cta: { label: "View on GitHub", href: "https://github.com/rtk-ai", variant: "secondary" } as Cta,
+    cta: { label: "View on GitHub", href: "https://github.com/takoia", variant: "secondary" } as Cta,
   },
 
   // 1) HERO
@@ -102,7 +102,7 @@ export const content = {
     pitch:
       "Others rent you agents that live in their cloud. Takoia runs on hardware you own, remembers what it learns, and lets you sell access to it.",
     ctas: [
-      { label: "View on GitHub", href: "https://github.com/rtk-ai", variant: "primary" },
+      { label: "View on GitHub", href: "https://github.com/takoia", variant: "primary" },
       { label: "Request access", href: "mailto:contact@rtk-ai.app?subject=Takoia%20access", variant: "secondary" },
     ] as Cta[],
   },
@@ -301,7 +301,7 @@ export const content = {
           "No usage metering, ever",
           "Individuals and teams up to 20",
         ],
-        cta: { label: "Get started on GitHub", href: "https://github.com/rtk-ai", variant: "secondary" },
+        cta: { label: "Get started on GitHub", href: "https://github.com/takoia", variant: "secondary" },
       },
       {
         name: "Pro",
@@ -343,19 +343,20 @@ export const content = {
     title: "Run it. Own it. Resell it.",
     body: "Others rent you agents that live in their cloud. Takoia runs on hardware you own, remembers what it learns, and lets you sell access to it.",
     ctas: [
-      { label: "View on GitHub", href: "https://github.com/rtk-ai", variant: "primary" },
+      { label: "View on GitHub", href: "https://github.com/takoia", variant: "primary" },
       { label: "Request access", href: "mailto:contact@rtk-ai.app?subject=Takoia%20access", variant: "secondary" },
     ] as Cta[],
   },
 
   footer: {
-    blurb: "A customizable AI-agent platform you self-host locally, with permanent memory.",
+    blurb: "Open source. A customizable AI-agent platform you self-host locally, with permanent memory. The full source lives on GitHub — inspect it, fork it, run it yourself.",
     columns: [
       {
-        title: "Project",
+        title: "Open source",
         links: [
-          { label: "GitHub (rtk-ai)", href: "https://github.com/rtk-ai" },
-          { label: "Open-source license", href: "https://github.com/rtk-ai" },
+          { label: "github.com/takoia", href: "https://github.com/takoia" },
+          { label: "Landing page repo", href: "https://github.com/takoia/landing-page" },
+          { label: "License", href: "https://github.com/takoia" },
         ],
       },
       {
@@ -363,6 +364,6 @@ export const content = {
         links: [{ label: "contact@rtk-ai.app", href: "mailto:contact@rtk-ai.app" }],
       },
     ],
-    license: "Open-source. © Takoia / RTK.",
+    license: "Open source · github.com/takoia · © Takoia / RTK.",
   },
 } as const;
