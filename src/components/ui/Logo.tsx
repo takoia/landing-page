@@ -15,8 +15,9 @@ export function Logo({ size = 30 }: { size?: number }) {
 }
 
 export function Wordmark() {
+  const content = useContent();
   return (
-    <a href="#top" className="wordmark" aria-label="Takoia — home">
+    <a href="#top" className="wordmark" aria-label={content.a11y.home}>
       <Logo />
       <span>Takoia</span>
     </a>

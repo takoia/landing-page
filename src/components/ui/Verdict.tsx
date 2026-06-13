@@ -1,4 +1,5 @@
 import type { Verdict } from "../../content";
+import { useContent } from "../../i18n";
 
 const GLYPH: Record<Verdict, string> = {
   yes: "✓",
@@ -7,17 +8,11 @@ const GLYPH: Record<Verdict, string> = {
   unknown: "?",
 };
 
-const LABEL: Record<Verdict, string> = {
-  yes: "Yes",
-  partial: "Partial",
-  no: "No",
-  unknown: "To verify",
-};
-
-/** Renders a ✓ / ~ / ✕ / ? verdict cell with an accessible label. */
+/** Renders a ✓ / ~ / ✕ / ? verdict cell with a localized accessible label. */
 export function VerdictMark({ value }: { value: Verdict }) {
+  const { legend } = useContent().comparison;
   return (
-    <span className={`verdict verdict--${value}`} role="img" aria-label={LABEL[value]}>
+    <span className={`verdict verdict--${value}`} role="img" aria-label={legend[value]}>
       {GLYPH[value]}
     </span>
   );

@@ -18,7 +18,7 @@ export function Nav() {
     <header className={`nav ${scrolled ? "nav--scrolled" : ""}`}>
       <div className="container nav__inner">
         <Wordmark />
-        <nav className="nav__links" aria-label="Primary">
+        <nav className="nav__links" aria-label={content.a11y.primaryNav}>
           {content.nav.links.map((l) => (
             <a key={l.href} href={l.href}>
               {l.label}

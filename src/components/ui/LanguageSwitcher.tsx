@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { LOCALES, useLanguage, type Locale } from "../../i18n";
+import { LOCALES, useContent, useLanguage, type Locale } from "../../i18n";
 
 /**
  * Accessible language switcher. Auto-detection sets the initial language;
@@ -8,6 +8,7 @@ import { LOCALES, useLanguage, type Locale } from "../../i18n";
  */
 export function LanguageSwitcher() {
   const { locale, setLocale } = useLanguage();
+  const { a11y } = useContent();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement | null>(null);
 
@@ -41,7 +42,7 @@ export function LanguageSwitcher() {
         className="lang__btn"
         aria-haspopup="listbox"
         aria-expanded={open}
-        aria-label={`Language: ${LOCALES[locale].label}`}
+        aria-label={`${a11y.language}: ${LOCALES[locale].label}`}
         onClick={() => setOpen((v) => !v)}
       >
         <GlobeIcon />
@@ -50,7 +51,7 @@ export function LanguageSwitcher() {
       </button>
 
       {open && (
-        <ul className="lang__menu" role="listbox" aria-label="Choose a language">
+        <ul className="lang__menu" role="listbox" aria-label={a11y.languageMenu}>
           {entries.map(([code, meta]) => (
             <li key={code} role="option" aria-selected={code === locale}>
               <button

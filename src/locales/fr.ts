@@ -17,6 +17,14 @@ export const fr: SiteContent = {
     },
   },
 
+  a11y: {
+    heroImageAlt: "Takoia — emblème de poulpe lumineux dans le style encre japonaise de la marque",
+    primaryNav: "Principale",
+    home: "Takoia — accueil",
+    language: "Langue",
+    languageMenu: "Choisir une langue",
+  },
+
   nav: {
     links: [
       { label: "Problème", href: "#problem" },
@@ -31,6 +39,7 @@ export const fr: SiteContent = {
   hero: {
     eyebrow: "Open source · auto-hébergé · mémoire permanente",
     h1: "Possédez votre expertise IA. Revendez-la.",
+    headline: { lead: "Possédez votre expertise IA.", accent: "Revendez-la." },
     subhead:
       "Takoia est une plateforme d'agents IA personnalisable que vous exécutez sur votre propre machine — même un Mac Mini à la maison. Elle conserve une mémoire permanente de votre expertise et vous permet d'en revendre l'accès, d'agent à agent ou d'humain à humain.",
     pitch:
@@ -105,6 +114,7 @@ export const fr: SiteContent = {
       no: "Non",
       unknown: "À vérifier",
     },
+    tieLabel: "égalité",
     footnote:
       "OpenClaw et Hermes sont des plateformes auto-hébergées et open source : elles partagent donc les atouts de souveraineté et de propriété de Takoia (indiqués par ✓) — nous ne les présentons pas comme exclusifs. Les lignes qui dépendent d'une fonctionnalité produit spécifique — revente intégrée, multi-modèle, mémoire permanente, connecteurs MCP — sont laissées « à vérifier » (?) plutôt que présumées. Les lignes à égalité sont des capacités que les plateformes cloud ont aussi.",
     rows: [
@@ -156,6 +166,7 @@ export const fr: SiteContent = {
     eyebrow: "Tarifs",
     title: "Une licence forfaitaire sur du matériel que vous possédez.",
     meterPromise: "Pas de compteur d'usage. Jamais.",
+    popularLabel: "Le plus populaire",
     tiers: [
       {
         name: "Community",

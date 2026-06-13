@@ -13,7 +13,7 @@ export function Hero() {
         </Reveal>
 
         <Reveal as="h1" className="hero__title" delay={60}>
-          Own your AI expertise. <span className="gradient-text">Resell it.</span>
+          {hero.headline.lead} <span className="gradient-text">{hero.headline.accent}</span>
         </Reveal>
 
         <Reveal as="p" className="hero__subhead" delay={120}>
@@ -44,7 +44,7 @@ export function Hero() {
             <img
               className="hero__visual-img"
               src={withBase(content.brand.assets.hero)}
-              alt="Takoia — luminous octopus emblem in the brand's Japanese ink style"
+              alt={content.a11y.heroImageAlt}
               loading="eager"
             />
           </div>

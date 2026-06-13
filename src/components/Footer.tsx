@@ -37,7 +37,7 @@ export function Footer() {
       </div>
       <div className="container footer__bottom">
         <span>{footer.license}</span>
-        <span className="mono footer__tako">tako 🐙 placeholder</span>
+        <span className="mono footer__tako">{content.brand.motif} 🐙</span>
       </div>
     </footer>
   );

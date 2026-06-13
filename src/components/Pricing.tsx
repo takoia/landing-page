@@ -22,7 +22,7 @@ export function Pricing() {
               key={tier.name}
               delay={100 + i * 90}
             >
-              {tier.featured && <span className="pricing__badge mono">Most popular</span>}
+              {tier.featured && <span className="pricing__badge mono">{pricing.popularLabel}</span>}
               <h3 className="pricing__name">{tier.name}</h3>
               <div className="pricing__price">
                 <span className="pricing__amount">{tier.price}</span>

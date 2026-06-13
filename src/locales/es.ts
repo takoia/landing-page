@@ -17,6 +17,14 @@ export const es: SiteContent = {
     },
   },
 
+  a11y: {
+    heroImageAlt: "Takoia — emblema de pulpo luminoso al estilo de tinta japonesa de la marca",
+    primaryNav: "Principal",
+    home: "Takoia — inicio",
+    language: "Idioma",
+    languageMenu: "Elegir un idioma",
+  },
+
   nav: {
     links: [
       { label: "Problema", href: "#problem" },
@@ -31,6 +39,7 @@ export const es: SiteContent = {
   hero: {
     eyebrow: "Código abierto · autoalojado · memoria permanente",
     h1: "Posee tu experiencia en IA. Revéndela.",
+    headline: { lead: "Posee tu experiencia en IA.", accent: "Revéndela." },
     subhead:
       "Takoia es una plataforma de agentes de IA personalizable que ejecutas en tu propia máquina — incluso en un Mac Mini en casa. Guarda una memoria permanente de tu experiencia y te permite revender el acceso a ella, de agente a agente o de persona a persona.",
     pitch:
@@ -105,6 +114,7 @@ export const es: SiteContent = {
       no: "No",
       unknown: "Por verificar",
     },
+    tieLabel: "empate",
     footnote:
       "OpenClaw y Hermes son plataformas autoalojadas y de código abierto, así que comparten los rasgos de soberanía y propiedad de Takoia (mostrados con ✓) — no los presentamos como exclusivos. Las filas que dependen de una funcionalidad de producto específica — reventa integrada, multimodelo, memoria permanente, conectores MCP — se dejan «por verificar» (?) en lugar de darlas por supuestas. Las filas de empate son capacidades que las plataformas en la nube también tienen.",
     rows: [
@@ -156,6 +166,7 @@ export const es: SiteContent = {
     eyebrow: "Precios",
     title: "Una licencia plana en hardware que posees.",
     meterPromise: "Sin contador de uso. Nunca.",
+    popularLabel: "Más popular",
     tiers: [
       {
         name: "Community",

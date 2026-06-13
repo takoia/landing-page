@@ -84,6 +84,15 @@ export const en = {
     },
   },
 
+  // Accessibility / screen-reader labels (alt text, aria-labels).
+  a11y: {
+    heroImageAlt: "Takoia — luminous octopus emblem in the brand's Japanese ink style",
+    primaryNav: "Primary",
+    home: "Takoia — home",
+    language: "Language",
+    languageMenu: "Choose a language",
+  },
+
   nav: {
     links: [
       { label: "Problem", href: "#problem" },
@@ -99,6 +108,8 @@ export const en = {
   hero: {
     eyebrow: "Open-source · self-hosted · permanent memory",
     h1: "Own your AI expertise. Resell it.",
+    // Split headline so the accent half can carry the gradient in the UI.
+    headline: { lead: "Own your AI expertise.", accent: "Resell it." },
     subhead:
       "Takoia is a customizable AI-agent platform you run on your own machine — even a Mac Mini at home. It keeps a permanent memory of your expertise and lets you resell access to it, agent-to-agent or human-to-human.",
     pitch:
@@ -199,6 +210,7 @@ export const en = {
       no: "No",
       unknown: "To verify",
     },
+    tieLabel: "tie",
     footnote:
       "OpenClaw and Hermes are self-hosted, open-source platforms, so they share Takoia's sovereignty and ownership traits (shown ✓) — we don't claim those as exclusive. Rows that depend on a specific product feature — built-in resale, multi-model, permanent memory, MCP connectors — are left “to verify” (?) for them rather than assumed. Tie rows are capabilities the cloud platforms also have.",
     rows: [
@@ -289,6 +301,7 @@ export const en = {
     title: "A flat license on hardware you own.",
     // CRITICAL: no usage meter, anywhere.
     meterPromise: "No usage meter. Ever.",
+    popularLabel: "Most popular",
     tiers: [
       {
         name: "Community",

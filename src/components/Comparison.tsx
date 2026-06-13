@@ -46,7 +46,7 @@ export function Comparison() {
                 >
                   <th scope="row" className="compare__rowhead">
                     <span className="compare__label">{row.label}</span>
-                    {row.tie && <span className="compare__tag mono">tie</span>}
+                    {row.tie && <span className="compare__tag mono">{comparison.tieLabel}</span>}
                     {row.note && <span className="compare__note">{row.note}</span>}
                   </th>
                   {competitors.map((c) => {
