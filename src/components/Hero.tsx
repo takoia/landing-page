@@ -1,5 +1,6 @@
 import { useContent } from "../i18n";
 import { Reveal } from "./ui/Reveal";
+import { withBase } from "../asset";
 
 export function Hero() {
   const content = useContent();
@@ -42,7 +43,7 @@ export function Hero() {
           <div className="hero__visual-frame">
             <img
               className="hero__visual-img"
-              src={content.brand.assets.hero}
+              src={withBase(content.brand.assets.hero)}
               alt="Takoia — luminous octopus emblem in the brand's Japanese ink style"
               loading="eager"
             />
