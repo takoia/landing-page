@@ -1,5 +1,6 @@
 import { useContent } from "../i18n";
 import { Reveal } from "./ui/Reveal";
+import { withBase } from "../asset";
 
 export function Triptych() {
   const content = useContent();
@@ -14,7 +15,7 @@ export function Triptych() {
           {triptych.steps.map((s, i) => (
             <Reveal className="triptych__step card" key={s.step} delay={120 + i * 100}>
               <div className="triptych__media">
-                <img src={s.image} alt="" loading="lazy" />
+                <img src={withBase(s.image)} alt="" loading="lazy" />
               </div>
               <span className="triptych__num mono">{s.step}</span>
               <h3>{s.title}</h3>

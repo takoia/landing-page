@@ -1,4 +1,5 @@
 import { useContent } from "../../i18n";
+import { withBase } from "../../asset";
 
 /**
  * Takoia mark — the real octopus (tako) emblem, generated/owned in the brand set.
@@ -8,7 +9,7 @@ export function Logo({ size = 30 }: { size?: number }) {
   const content = useContent();
   return (
     <span className="logo" aria-hidden="true" style={{ width: size, height: size }}>
-      <img src={content.brand.assets.mark} alt="" width={size} height={size} />
+      <img src={withBase(content.brand.assets.mark)} alt="" width={size} height={size} />
     </span>
   );
 }
