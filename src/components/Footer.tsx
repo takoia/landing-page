@@ -9,7 +9,7 @@ export function Footer() {
       <div className="container footer__inner">
         <div className="footer__brand">
           <a href="#top" className="wordmark" aria-label={content.a11y.home}>
-            <Logo size={56} />
+            <Logo size={80} />
           </a>
           <p className="footer__blurb">{footer.blurb}</p>
         </div>

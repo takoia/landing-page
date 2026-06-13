@@ -19,7 +19,7 @@ export function Wordmark() {
   // The brand name is baked into the logo image, so no separate text label.
   return (
     <a href="#top" className="wordmark" aria-label={content.a11y.home}>
-      <Logo size={48} />
+      <Logo size={60} />
     </a>
   );
 }
