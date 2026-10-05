@@ -116,3 +116,10 @@ ready — no fabricated brand assets are shipped.
 - Multi-model, permanent memory, and MCP are **not** exclusive (Google/Microsoft have
   them) — those comparison rows are rendered as neutral "tie" rows.
 - No fake stats, customer logos, testimonials, or invented competitor prices.
+
+## License
+
+TakoIA landing-page is licensed under the **Business Source License 1.1** (BSL
+1.1) — see [`LICENSE`](./LICENSE). You may copy, modify and make **non-production**
+use of the code freely. On the **Change Date (2028-06-14)** the license
+automatically converts to the **Apache License, Version 2.0**.
